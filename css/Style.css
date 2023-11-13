@@ -1,0 +1,724 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+#EC5C29 - International orange
+#B1441C - Light
+#833213 - Medium
+#3A1604 - Dark
+#FFFFFF - #FFFFFF
+#000000 - #000000
+*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Scope+One&display=swap');
+
+
+
+#amberImg {
+	position: sticky;
+    top: 20%;
+    left: 40%;
+	opacity: 0.92;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #000000;
+    position: fixed;
+    /* Blokuje okno menu w przegladarce */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	z-index: 3;
+}
+nav .nav-left {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.5;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+nav ol {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+}
+
+nav ol li {}
+
+nav ol li a {
+    padding: 2rem;
+    margin-right: 2rem;
+	margin-top: 1.5rem;
+    display: inline;
+    display: block;
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transmition: .2s;
+}
+
+nav ol li a:hover {
+    color: #EC5C29;
+	text-underline-offset: 0.4em;
+}
+
+nav ol li a {
+	position: relative;
+	display: inline-block;
+}
+
+nav ol li a::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 1rem;
+	width: 100%;
+	height: 0.1rem;
+	background-color: #EC5C29;
+	border-radius: 4px;
+	scale: 0 1;
+	transform-origin: right;
+	transition: scale 0.25s;
+}
+
+nav ol li a:hover::before {
+	scale: 1;
+}
+
+section {
+    min-height:70vh;
+    display: flex;
+    scroll-margin-top: 80px;
+}
+
+nav img {
+    height: 8.3rem;
+    width: 6.2rem;
+	margin-left: 2rem;
+}
+
+nav h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav span {
+    font-family: 'Scope One', serif;
+    font-size: 0.8rem;
+}
+
+.zawartosc1200 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#pierwsza .zawartosc1200 {
+	margin-top: 12rem;
+	margin-bottom: 15rem;
+	max-width: 1200px;
+}
+
+#pierwsza {
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+	margin-top: -400px;
+}
+
+#pierwsza h1 {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 9rem;
+    text-decoration: none;
+	width: 60vw;
+}
+
+#pierwsza h1 span {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 9rem;
+    text-align: right;
+	float: right;
+    text-decoration: none;
+}
+
+#pierwsza a {
+    display: block;
+    margin: auto;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+	position: absolute;
+}
+
+#pierwsza a:hover {
+	background-color: #EC5C29;
+	transform:scale(1.2);
+	transition: 1s;
+}
+
+#pierwsza a span {
+    font-size: 2rem;
+    transform: translate(0rem, 1.2rem);
+}
+
+#pierwsza img {
+    display: block;
+    width: 40%;
+    position: fixed;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pierwsza .NoImg {
+	display: none;
+}
+
+#druga {
+	background-color: #000000;
+}
+
+#druga .zawartosc1200 {
+	max-width: 1200px;
+    margin: auto;	
+	margin-bottom: 0;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.wrap_flex {
+	display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#druga .imgsection {
+    flex-wrap: wrap;
+    width: 46%;
+	max-width: 100%;
+	align-self: flex-end;
+}
+
+#druga .textsection {
+	font-family: 'Montserrat', sans-serif;
+	width: 45%;
+    display: block;
+    text-align: left;
+}
+
+#druga h2 {
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	text-align: left;
+	color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+	
+	margin-bottom: 2rem;
+}
+
+#druga .lead {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1rem;
+	line-height: 1.5rem;
+}
+
+#druga p {
+	color: #FFFFFF;
+	font-family: 'Scope One', serif;
+	line-height: 1.3rem;
+	margin-bottom: 3rem;
+}
+
+#druga .Bigtext {
+	font-family: 'Oswald', sans-serif;
+	text-align: right;
+	font-size: 1rem;
+	vertical-align: top;
+	margin-top: 26rem;
+	color: #B1441C;
+}
+
+#druga .Header {
+	font-family: 'Oswald', sans-serif;
+	font-size: 9rem;
+	margin-top: 3rem;
+}
+
+#druga .Container {
+	display: none;
+}
+
+#druga p::selection {
+	color: #FFFFFF;
+	background-color: #EC5C29;
+}
+
+#trzecia {
+	background-color: #000000;
+}
+
+#trzecia .zawartosc1200 {
+	min-height: 50vh;
+	max-width: 1200px;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#trzecia {
+	background-image: url("../img/Orange.gif");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	min-height: 20vh;
+}
+
+#trzecia h2 {
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 0.1rem;
+	line-height: 1.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	text-align: left;
+	
+	color: #FFFFFF;
+}
+
+.wrap_flex {
+	display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#trzecia img {
+	width: 600px;
+	height: 100%;
+	max-width: 100%;
+	margin-bottom: 5rem;
+}
+
+#trzecia .lead {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1rem;
+	color: #FFFFFF;
+	line-height: 1.5rem;
+}
+
+#trzecia .Header{
+	font-family: 'Oswald', sans-serif;
+	font-size: 9rem;
+	text-align: right;
+	margin-top: 1.5rem;
+}
+#trzecia p {
+	color: #FFFFFF;
+	font-family: 'Scope One', serif;
+	margin-bottom: 1rem;
+}
+
+#trzecia .textsection {
+	width: 30%;
+    text-align: left;
+	padding: 3rem;
+	margin: 0 -3rem 0 -3rem;
+	background-color: rgba(0,0,0,1.0);
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	line-height: 1.3rem;
+}
+
+#trzecia a {
+	display: flex;
+	justify-content:flex-end;
+	font-size: 1.5rem;
+	margin-top: 0;
+
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: #B1441C;
+	text-decoration: none;
+	transition: 0.5s;;	
+}
+
+#trzecia a:hover {
+	color: #833213;
+	transform: translate(1rem);
+}
+
+#trzecia footer span {
+	font-size: 1.2rem;
+	transform: translate(8px, 2px);
+}
+
+#trzecia p:selection {
+	color: #FFFFFF;
+	background-color: #EC5C29;
+}
+
+#czwarta {
+	background-color: #000000;
+}
+
+#czwarta .zawartosc1200 {
+	min-height: 50vh;
+	width: 100%;
+	max-width: 1200px;
+	
+ 	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+#czwarta h2 {
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 0.1rem;
+	line-height: 1.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	margin-top: 3rem;
+	text-align: left;
+	
+	color: #FFFFFF;
+}
+
+#czwarta p {
+	color: #FFFFFF;
+  	font-family: 'Scope One', serif;
+	text-align:right;
+  	line-height: 1.3rem;
+  	margin-bottom: 5rem;
+}
+
+#czwarta cite {
+	display: flex;
+	justify-content: flex-start;
+	width: 25%;
+	text-align: left;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 0rem;
+	line-height: 1.3rem;
+	
+	color: #FFFFFF;
+}
+
+#czwarta .Header {
+	font-family: 'Oswald', sans-serif;
+  	font-size: 9rem;
+	margin-left: 5rem;
+	margin-top: -4.5rem;
+}
+
+#czwarta .photosection {
+	display: flex;
+	justify-content: center;
+	border-radius: 1rem;
+	gap:4rem;
+	margin-bottom: 6rem;
+}
+
+#czwarta img {
+	position: relative;
+	top: 0;
+	margin: 1rem 0 1rem 0;
+	height: 100%;
+	width: 300px;
+	object-fit: cover;
+	max-width: 100%;
+	align-self: center;
+	transition: transform .25s;
+}
+
+#czwarta img:hover {
+	transform: scale(1.1);
+}
+
+#czwarta article {
+	display: flex;
+    flex-direction: column;
+	gap: 1rem;
+}
+
+#stopka {
+	background-image: url("../img/Orange.gif");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: #FFFFFF;
+	min-height: 20vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#stopka .zawartosc1200 {
+	display: flex;
+	justify-content: space-between;
+	gap: 3rem;
+	width: 100%;
+}
+
+@media(max-width: 1024px){
+	#stopka .zawartosc1200 {
+		flex-direction: column;
+	}
+	
+	#stopka .zawartosc1200 {
+		align-items: center;
+	}
+	
+	nav h1 {
+		display: none;
+	}
+	
+	.imgsection {
+		display: none;
+	}
+	
+	#amberImg {
+		display: none;
+	}
+	
+	#pierwsza {
+		margin-top: 0;
+	}
+	
+	nav ol {
+		gap: 0;
+	}
+	
+	#druga .textsection {
+    	margin: 3rem;
+}
+	#trzecia .textsection {
+		margin: 0;
+	}
+	
+	#druga .Bigtext {
+		display: none;
+	}
+	
+	#druga p {
+		margin-bottom: 3rem;
+	}
+	
+	#druga .Container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+   		margin-top: 5rem;
+		margin-bottom: 3rem;
+		opacity: 0.92;
+	}
+	
+	#czwarta .textsection {
+		margin-left: 3rem;
+	}
+	
+	#czwarta .Header {
+		margin-left: 18rem;
+	}
+	
+	#stopka .zawartosc1200 {
+		background-color: #000000;
+		width: 80%;
+	}
+	
+	#stopka .Contact {
+		width: 55%;
+		padding: 3rem;
+		margin: 0 -3rem 0 -3rem;
+	}
+}
+
+
+#stopka h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	letter-spacing: 0rem;
+	text-align: left;
+	margin: 2rem 0 0 0;
+}
+
+#stopka article span {
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	transform: translate(-1px, 7px);
+	margin-right: 0.5rem;
+}
+
+#stopka article a {
+	margin-top: 4rem;
+	color: #FFFFFF;
+}
+
+#stopka .Other a {
+	display: flex;
+	justify-content: left;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.Social {
+	display: flex;
+	gap: 5rem;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.Social i:hover {
+	transform: scale(1.2);
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+
+.Contact {
+	font-size: 1rem;
+	background-color: #000000;
+	width: 35%;
+	padding: 3rem;
+	margin: 0 -3rem 0 -3rem;
+}
+
+.Contact * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: 1s;
+}
+
+.Contact *:focus {
+	outline: 0;
+}
+
+#stopka .Contact h1 {
+	text-align: center;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	letter-spacing: 0rem;
+	margin-top: -1rem;
+}
+
+#stopka .Contact label {
+	display: inline-block;
+}
+
+#stopka .Contact form main label {
+	width: 24%;
+	text-align: right;
+	padding-right: .5rem;
+}
+
+#stopka .Contact form main input {
+	width: 62%;
+	padding: 0.5rem;
+	margin-bottom: .5rem;
+	border-radius: 1rem;
+	background: none;
+	color: #FFFFFF;
+}
+
+.Contact textarea {
+	width: 61%;
+	resize: none;
+	padding: 1rem;
+	margin-top: 0.5rem;
+	border-radius: 0;
+	
+	background: none;
+	box-shadow: 0 0 0 .09rem #FFFFFF inset;
+	color: #FFFFFF;
+}
+
+#stopka .Contact form > label {
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	margin: 1rem;
+}
+
+#stopka .Contact a {
+	color: #EC5C29;
+}
+
+.Contact form input[type=submit] {
+	display: block;
+	margin: auto;
+	transform: translate(0.1rem, 1rem);
+	border-radius: 0;
+	padding: 1rem;
+	font-size: 1rem;
+	background-color: #EC5C29;
+	color: #FFFFFF;
+}
+
+.Contact form input[type=submit]:hover {
+	background-color: #833213;
+	transform: scale(1.1) translate(0.1rem, 1rem);
+}
+
+input[type='checkbox'] {
+      position: relative;
+      cursor: pointer;
+ }
+
+ input[type='checkbox']:checked:before {     
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0.9rem;
+      height: 0.9rem;
+      top: 50%;
+      left: 50%;
+      background-color: #EC5C29;
+      outline: 1px rgba(236,92,41,1.00) solid;
+      transform: translate(-50%, -50%);
+ }
+
+ input[type='checkbox']:checked:after {
+      content: '';
+      display: block;
+      width: 0.3rem;
+      height: 0.5rem;
+      border: solid;
+      border-width: 0 2px 2px 0;
+      border-color: #FFFFFF;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+ }
+
+#stopka h6 {
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 0.8rem 0;
+	
+	font-family: 'Oswald', sans-serif;
+	
+	color: #FFFFFF;
+	background-color: #000000;
+}
